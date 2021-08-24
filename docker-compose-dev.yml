@@ -17,7 +17,7 @@ services:
       - ./app:/app/app
 
   postgres:
-    image: "postgres:12"
+    image: "postgres:alpine"
     ports:
       - "5432:5432"
     env_file: .env

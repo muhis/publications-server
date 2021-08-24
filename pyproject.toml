@@ -11,11 +11,11 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.7"
-fastapi = "^0.44.0"
-tortoise-orm = "^0.15.4"
-pydantic = "^1.1"
-asyncpg = "^0.20.0"
-loguru = "^0.3.2"
+fastapi = "^0.68.0"
+tortoise-orm = "^0.17.6"
+pydantic = "^1.8.2"
+asyncpg = "^0.24.0"
+loguru = "^0.5.3"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^18.3-alpha.0", allows-prereleases = true}
