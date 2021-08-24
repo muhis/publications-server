@@ -1,4 +1,4 @@
-from app.core.routers.generic import router as hello_router
+from app.core.routers.generic import router as server_health
 from app.utils.api.router import TypedAPIRouter
 
-hello_router = TypedAPIRouter(router=hello_router, tags=["hello"])
+generic_router = TypedAPIRouter(router=server_health, tags=["server health"])

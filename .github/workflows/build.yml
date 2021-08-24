@@ -19,7 +19,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install poetry
-        poetry config settings.virtualenvs.create false
+        poetry config virtualenvs.create false
         make init
     - name: Test with pytest
       run: |
