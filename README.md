@@ -1,16 +1,26 @@
-# FastAPI and Tortoise ORM.
-Powerful but simple template for web APIs w/ FastAPI (as web framework) and Tortoise-ORM (for working via database without headache).
+# Publications API server
+This is a simple product to manage a list of publications. Each publication can have simple information about the publications, along with a list of the publication's authors. This app is built with the technologies:
+1. FastAPI: A blazing fast Python async framework.
+2. Pydantic: Pydantic is used for most of the validation for the API's input and output.
+3. Tortoise: Asynchronous Relational Database object relational mapper (ORM). This ORM brings a Django-like API only asynchronously and without the need to django.
+4. Pytest: Fast python test runner configured and running. Currently has a simple smoke test for the API server. 
+5. Docker compose: For deployment and developer environment.
+6. Poetry: Elegant python environment/dependency management. 
 
-## Features
-    * Deploy with Docker.
-    * Local development with docker-compose.
-    * Fast and powerful web framework and ORM.
-    * Clear and fast code.
-    * Some powerful utils out-of-the-box that highly customizable with tests.
+# How to use
 
-## How to use?
+## Run locally
 
-1. Clone this repository (`git clone https://github.com/prostomarkeloff/fastapi-tortoise`)
-2. Rename `.env.example` to `.env`
-3. Delete unnecessary code (like `hello` router and tests for it)
-4. Customize!
+```shell
+C:\coding\publications-server>docker compose -f docker-compose-dev.yml up
+```
+
+This will spawn a postgres database and API server with it.
+
+## Testing
+
+```shell
+pip install poetry
+poetry install
+pytest
+```
